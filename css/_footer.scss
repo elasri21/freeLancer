@@ -1,0 +1,81 @@
+footer {
+    padding: 60px 0;
+    background-color: $footer-bg;
+    .container {
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+            a {
+                span {
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $title-c;
+                    &.green {
+                        color: $main-c;
+                    }
+                }
+            }
+        }
+        .social {
+            gap: 10px;
+            margin-bottom: 30px;
+            a {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $social-bg;
+                i {
+                    color: $title-c;
+                    font-size: 18px;
+                    transition: .3s;
+                }
+                &:hover {
+                    background-color: $main-c;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        h2 {
+            @media (min-width: 768px) {
+                font-size: 35px !important;
+            }
+            font-size: 22px;
+            font-weight: 600;
+            color: $title-c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        ul {
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            li {
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $title-c;
+                    text-transform: capitalize;
+                    &:hover {
+                        color: $main-c;
+                    }
+                }
+            }
+        }
+        .copy-right {
+            text-align: center;
+            p {
+                a {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $grey-c;
+                    &:hover {
+                        color: $title-c;
+                    }
+                }
+            }
+        }
+    }
+}
